@@ -1,0 +1,122 @@
+K-Means Clustering - Segmentacion de Estudiantes Universitarios
+Descripcion
+
+Este proyecto aplica el algoritmo K-Means para segmentar estudiantes universitarios en diferentes grupos utilizando tecnicas de Machine Learning No Supervisado.
+
+El objetivo es identificar patrones dentro de los datos agrupando estudiantes con caracteristicas similares a partir de:
+
+Edad
+Horas de estudio
+Promedio academico
+
+Antes de aplicar K-Means se realiza una estandarizacion de los datos utilizando StandardScaler para evitar que una variable tenga mas influencia que otra debido a su escala numerica.
+
+Objetivos
+Cargar los datos en un DataFrame mediante Pandas.
+Estandarizar las variables numericas.
+Aplicar K-Means utilizando 4 clusters.
+Analizar los grupos obtenidos.
+Visualizar los resultados mediante un grafico de dispersion.
+Interpretar los perfiles detectados por el algoritmo.
+Tecnologias Utilizadas
+Python
+Pandas
+Scikit-Learn
+Matplotlib
+Variables Utilizadas
+
+edad
+
+Representa la edad del estudiante.
+
+horas_estudio
+
+Representa la cantidad de horas dedicadas al estudio.
+
+promedio_academico
+
+Representa el promedio academico obtenido por cada estudiante.
+
+Metodologia
+
+Se cargan los datos de los estudiantes.
+
+Se convierten los datos a un DataFrame.
+
+Se seleccionan las variables relevantes para el clustering:
+
+edad
+horas_estudio
+promedio_academico
+Se aplica StandardScaler para estandarizar las variables.
+
+Se ejecuta K-Means utilizando 4 clusters.
+
+Se asigna a cada estudiante el cluster correspondiente.
+
+Se analizan los resultados mediante medias agrupadas por cluster.
+
+Se genera un grafico de dispersion para visualizar los segmentos detectados.
+
+Resultados
+
+Cluster 0
+
+Edad promedio: 28.25
+Horas de estudio promedio: 11.88
+Promedio academico: 2.47
+
+Cluster 1
+
+Edad promedio: 39.75
+Horas de estudio promedio: 7.33
+Promedio academico: 5.18
+
+Cluster 2
+
+Edad promedio: 51.16
+Horas de estudio promedio: 4.11
+Promedio academico: 7.83
+
+Cluster 3
+
+Edad promedio: 25.33
+Horas de estudio promedio: 12.33
+Promedio academico: 8.46
+Interpretacion de los Clusters
+
+Cluster 0
+
+Estudiantes relativamente jovenes, con muchas horas de estudio y bajo rendimiento academico.
+
+Cluster 1
+
+Estudiantes de edad intermedia, con dedicacion moderada y rendimiento medio.
+
+Cluster 2
+
+Estudiantes de mayor edad, pocas horas de estudio y alto rendimiento academico.
+
+Cluster 3
+
+Estudiantes jovenes, muchas horas de estudio y los mejores resultados academicos observados.
+
+Visualizacion
+
+El proyecto incluye un grafico de dispersion donde:
+
+Eje X: Edad
+Eje Y: Promedio academico
+Color: Cluster asignado por K-Means
+
+Esto permite observar visualmente la distribucion de los grupos encontrados.
+
+Conclusiones
+
+La aplicacion de K-Means permitio identificar cuatro perfiles diferenciados dentro del conjunto de estudiantes.
+
+Uno de los hallazgos mas interesantes fue encontrar grupos con cantidades similares de horas de estudio pero con rendimientos academicos muy diferentes.
+
+Tambien se detecto un grupo de estudiantes de mayor edad con buenos resultados academicos y pocas horas de estudio.
+
+Es importante destacar que K-Means permite descubrir patrones y agrupamientos presentes en los datos, pero no permite determinar relaciones de causa y efecto entre las variables analizadas.
